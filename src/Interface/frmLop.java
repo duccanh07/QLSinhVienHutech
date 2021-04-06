@@ -70,7 +70,7 @@ public class frmLop extends javax.swing.JFrame {
         }
         //</editor-fold>
 
-        /* Create and display the form */
+        /* Create and display the formm */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new frmLop().setVisible(true);
