@@ -52,7 +52,7 @@ public class frmLogin extends javax.swing.JFrame {
                     String password = "" + rs.getString("MatKhau");
                     if (!user.equals(username))
                     {
-//                        JOptionPane.showMessageDialog(null, "Đăng nhâp thành công", "Thông báo", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "Đăng nhâp thành công", "Thông báo", JOptionPane.ERROR_MESSAGE);
                         txtUsername.selectAll();
                         txtPassword.setText("");
                         txtUsername.requestFocus();
@@ -66,7 +66,7 @@ public class frmLogin extends javax.swing.JFrame {
                     else
                     {
                         nameLogin = username;
-                        //new frmMain().setVisible(true);
+                        new frmMain().setVisible(true);
                         dispose();
                     }
                 }
@@ -236,7 +236,7 @@ public class frmLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_btnThoatActionPerformed
 
     private void btnDangnhapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDangnhapActionPerformed
-//        send();
+          send();
     }//GEN-LAST:event_btnDangnhapActionPerformed
 
     private void txtPasswordKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPasswordKeyReleased
