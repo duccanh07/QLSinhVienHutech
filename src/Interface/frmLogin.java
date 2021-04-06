@@ -242,7 +242,7 @@ public class frmLogin extends javax.swing.JFrame {
     private void txtPasswordKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPasswordKeyReleased
         if (evt.getKeyCode() == KeyEvent.VK_ENTER)
         {
-//            send();
+            send();
         }
     }//GEN-LAST:event_txtPasswordKeyReleased
 
