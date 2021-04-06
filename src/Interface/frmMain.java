@@ -673,7 +673,7 @@ public class frmMain extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jtpContent, javax.swing.GroupLayout.DEFAULT_SIZE, 742, Short.MAX_VALUE))
+                    .addComponent(jtpContent, javax.swing.GroupLayout.DEFAULT_SIZE, 762, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
