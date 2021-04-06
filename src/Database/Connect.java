@@ -22,7 +22,7 @@ public class Connect {
     public static String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
     public static String url = "jdbc:sqlserver://localhost:1433; databaseName=QLDiemSinhVien1";
     public static String user = "sa";
-    public static String pass = "123456";   
+    public static String pass = "1234566";   
 
     public static boolean open()
     {
