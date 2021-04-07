@@ -12,12 +12,13 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 /**
  *
  * @author 84378
  */
 public class MonHocDAO {
-    //@Override
+   // @Override
     public ArrayList<MonHoc> getAll()
     {
         ArrayList<MonHoc> list = null;
@@ -56,7 +57,7 @@ public class MonHocDAO {
         return list;
     }
 
-  //  @Override
+    //@Override
     public ArrayList<MonHoc> findByIDMonHoc(String mamh)
     {
         ArrayList<MonHoc> list = null;
@@ -131,7 +132,7 @@ public class MonHocDAO {
         return mh;
     }
 
-    //@Override
+   // @Override
     public MonHoc updateByID(MonHoc mh)
     {
         PreparedStatement ps = null;
