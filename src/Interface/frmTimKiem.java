@@ -5,6 +5,14 @@
  */
 package Interface;
 
+import java.awt.event.KeyEvent;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author DucCanh
@@ -17,7 +25,134 @@ public class frmTimKiem extends javax.swing.JFrame {
     public frmTimKiem() {
         initComponents();
     }
+     private DefaultTableModel dtm;
+    private DefaultTableModel dtmMark;
+    ArrayList<BangDiem> listbdiem = null;
 
+    public frmTimKiem()
+    {
+        initComponents();
+        dtm = new DefaultTableModel();
+        dtmMark = new DefaultTableModel();
+
+        // Tìm sinh viên theo mã lớp
+        dtm.addColumn("Mã sinh viên");
+        dtm.addColumn("Họ tên");
+        dtm.addColumn("Hệ đào tạo");
+        dtm.addColumn("Giới tính");
+        dtm.addColumn("Ngày sinh");
+        dtm.addColumn("Địa chỉ");
+        dtm.addColumn("Số điện thoại");
+        dtm.addColumn("Mã lớp");
+        tblSinhVien_MaLop.setModel(dtm);
+
+        // Tìm điểm theo mã sinh viên
+        dtmMark.addColumn("Mã sinh viên");
+        dtmMark.addColumn("Mã môn học");
+        dtmMark.addColumn("Lần thi");
+        dtmMark.addColumn("Hệ số");
+        dtmMark.addColumn("Điểm");
+        dtmMark.addColumn("Trạng thái");
+        tblDiem_MaSV.setModel(dtmMark);
+    }
+    
+    private static Object[] toObjectData(SinhVien sv)
+    {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        String date = dateFormat.format(sv.getNgaysinh());
+        boolean flag = sv.isGioitinh();
+        String gioitinh;
+        if (flag == true)
+            gioitinh = "Nam";
+        else
+            gioitinh = "Nữ";
+        Object[] objectData = {sv.getMasv(), sv.getHotensv(), sv.getHedaotao(), gioitinh, date, sv.getDiachi(), sv.getSdt(), sv.getMalop()};
+        return objectData;
+    }
+    
+    public static Object[] toOjectBd(BangDiem bd)
+    {
+        boolean flag = bd.isTrangthai();
+        String trangthai;
+        if (flag == true)
+            trangthai = "Bật";
+        else
+            trangthai = "Tắt";
+        Object[] objects = {bd.getMasv(), bd.getMamh(), bd.getLanthi(), bd.getHeso(), bd.getDiem(), trangthai};
+        return objects;
+    }
+
+    public void timkiem()
+    {
+        String malop = txtMaLop.getText();
+        while (dtm.getRowCount() > 0)
+        {
+            dtm.removeRow(0);
+        }
+        try
+        {
+            ISinhVienDAO sinhVienDAO = (ISinhVienDAO) Class.forName("Proccess.SinhVien.SinhVienDAO").newInstance();
+            ArrayList<SinhVien> list = sinhVienDAO.findByIDLop(malop);
+            for (SinhVien sv : list)
+            {
+                dtm.addRow(toObjectData(sv));
+            }
+        }
+        catch (ClassNotFoundException | InstantiationException | IllegalAccessException ex)
+        {
+            Logger.getLogger(frmThongKe.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        Check c = new Check();
+        if (!c.checkSpace(malop) || !c.check(malop))
+        {
+            JOptionPane.showMessageDialog(this, "Lỗi nhập mã lớp", "Hãy nhập lại", JOptionPane.ERROR_MESSAGE);
+            txtMaLop.selectAll();
+            txtMaLop.requestFocus();
+        }
+        else if (dtm.getRowCount() == 0)
+        {
+            JOptionPane.showMessageDialog(this, "Không tìm thấy lớp này hoặc lớp này không có sinh viên", "Hãy nhập lại", JOptionPane.ERROR_MESSAGE);
+            txtMaLop.selectAll();
+            txtMaLop.requestFocus();
+        }
+    }
+
+    public void timKiemDiem()
+    {
+        String masv = txtMaSV.getText();
+        while (dtmMark.getRowCount() > 0)
+        {
+            dtmMark.removeRow(0);
+        }
+        try
+        {        
+            IBangDiemDAO bangDiemDAO = (IBangDiemDAO) Class.forName("Proccess.BangDiem.BangDiemDAO").newInstance();
+            ArrayList<BangDiem> listbd = bangDiemDAO.findByIDSinhVien(masv);
+            for (BangDiem bd : listbd)
+            {
+                dtmMark.addRow(toOjectBd(bd));
+            }
+        }
+        catch (ClassNotFoundException | InstantiationException | IllegalAccessException ex)
+        {
+            Logger.getLogger(frmTimKiem.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        Check c = new Check();
+        if (!c.checkSpace(masv) || !c.check(masv))
+        {
+            JOptionPane.showMessageDialog(this, "Lỗi nhập mã sinh viên", "Hãy nhập lại", JOptionPane.ERROR_MESSAGE);
+            txtMaSV.selectAll();
+            txtMaSV.requestFocus();
+        }        
+        else if (dtmMark.getRowCount() == 0)
+        {
+            JOptionPane.showMessageDialog(this, "Không tìm thấy sinh viên này hoặc sinh viên này không có điểm", "Hãy nhập lại", JOptionPane.ERROR_MESSAGE);
+            txtMaSV.selectAll();
+            txtMaSV.requestFocus();
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -266,7 +401,7 @@ public class frmTimKiem extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 962, Short.MAX_VALUE)
+            .addGap(0, 986, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -275,7 +410,7 @@ public class frmTimKiem extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 680, Short.MAX_VALUE)
+            .addGap(0, 728, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
