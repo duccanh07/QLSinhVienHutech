@@ -271,7 +271,7 @@ public class frmKhoa extends javax.swing.JPanel
         jLabel4.setText("Số điện thoại");
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel6.setText("(8 số)");
+        jLabel6.setText("(10 số)");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
