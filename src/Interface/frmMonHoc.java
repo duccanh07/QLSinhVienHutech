@@ -137,6 +137,9 @@ public class frmMonHoc extends javax.swing.JPanel
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+
+        jPanel2 = new javax.swing.JPanel();
+
         jPanel5 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         tblMonHoc = new javax.swing.JTable();
@@ -159,10 +162,107 @@ public class frmMonHoc extends javax.swing.JPanel
         btnXoa = new javax.swing.JButton();
         btnReset = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
+
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+
+        jPanel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        tblMonHoc.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        tblMonHoc.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Mã môn học", "Tên môn học", "Số tín chỉ", "Hình thức thi", "Học kỳ", "Phòng học"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        tblMonHoc.setRowHeight(25);
+        tblMonHoc.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tblMonHocMouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(tblMonHoc);
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2)
+                .addContainerGap())
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel3.setForeground(new java.awt.Color(255, 255, 255));
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(51, 102, 255));
+        jLabel3.setText("Tên môn học");
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(51, 102, 255));
+        jLabel2.setText("Mã môn học");
+
+        txtMaMH.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        txtPhongHoc.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        txtSoTinChi.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        txtTenMH.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        txtTenMH.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTenMHActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(51, 102, 255));
+        jLabel4.setText("Số tín chỉ");
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(51, 102, 255));
+        jLabel5.setText("Học kỳ");
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(51, 102, 255));
+        jLabel6.setText("Phòng học");
+
+        txtHocKy.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        jPanel6 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         jPanel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
@@ -310,6 +410,7 @@ public class frmMonHoc extends javax.swing.JPanel
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+
         jPanel3Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {cboHinhThucThi, txtHocKy, txtMaMH, txtPhongHoc, txtSoTinChi, txtTenMH});
 
         btnThem.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -398,6 +499,19 @@ public class frmMonHoc extends javax.swing.JPanel
                     .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+
                     .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8))
                 .addGap(0, 0, Short.MAX_VALUE))
@@ -414,12 +528,27 @@ public class frmMonHoc extends javax.swing.JPanel
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
+                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(11, 11, 11)
                         .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
+
         jPanel2.setBackground(new java.awt.Color(51, 102, 255));
+
+        jPanel6.setBackground(new java.awt.Color(51, 102, 255));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setForeground(java.awt.Color.white);
@@ -435,6 +564,15 @@ public class frmMonHoc extends javax.swing.JPanel
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1072, Short.MAX_VALUE)
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addContainerGap())
@@ -453,6 +591,40 @@ public class frmMonHoc extends javax.swing.JPanel
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1072, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 517, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -469,7 +641,11 @@ public class frmMonHoc extends javax.swing.JPanel
         btnXoa.setEnabled(true);
         txtMaMH.setEnabled(false);
     }//GEN-LAST:event_tblMonHocMouseClicked
-       
+
+    private void txtTenMHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTenMHActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTenMHActionPerformed
+
     private void btnThemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThemActionPerformed
         String maMH = txtMaMH.getText();
         String tenMH = txtTenMH.getText();
@@ -477,6 +653,7 @@ public class frmMonHoc extends javax.swing.JPanel
         String htThi = (String) cboHinhThucThi.getSelectedItem();
         String hocKy = txtHocKy.getText();
         String phongHoc = txtPhongHoc.getText();
+
         
         Check c = new Check();
         if (!c.checkID(txtMaMH.getText()))
@@ -504,6 +681,33 @@ public class frmMonHoc extends javax.swing.JPanel
             if (insert != null)
                 showAll();
         }
+
+//        Check c = new Check();
+//        if (!c.checkID(txtMaMH.getText()))
+//        {
+//            JOptionPane.showMessageDialog(this, "Lỗi nhập mã môn học", "Hãy nhập lại", JOptionPane.ERROR_MESSAGE);
+//            txtMaMH.selectAll();
+//            txtMaMH.requestFocus();
+//        }
+//        else if (!checkinfo())
+//        return;
+//
+//        int stchi = Integer.parseInt(soTinchi);
+//        int hky = Integer.parseInt(hocKy);
+//        MonHoc monHoc = new MonHoc(maMH, tenMH, stchi,  htThi, hky, phongHoc);
+//        ArrayList<MonHoc> listCheck = new MonHocDAO().CheckID(maMH);
+//        if (listCheck.size() > 0)
+//        {
+//            JOptionPane.showMessageDialog(this, "Mã môn học bị trùng!", "Vui lòng kiểm tra lại", JOptionPane.ERROR_MESSAGE);
+//            txtMaMH.selectAll();
+//            txtMaMH.requestFocus();
+//        }
+//        else
+//        {
+//            MonHoc insert = new MonHocDAO().addNew(monHoc);
+//            if (insert != null)
+//            showAll();
+//        }
     }//GEN-LAST:event_btnThemActionPerformed
 
     private void btnCapnhatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCapnhatActionPerformed
@@ -513,6 +717,7 @@ public class frmMonHoc extends javax.swing.JPanel
         String htThi = (String) cboHinhThucThi.getSelectedItem();
         String hocKy = txtHocKy.getText();
         String phongHoc = txtPhongHoc.getText();
+
         
         if(maMH.length()==0)       
             JOptionPane.showMessageDialog(null, "Vui lòng chọn môn học cần cập nhật", "Thông báo", 1);
@@ -529,10 +734,28 @@ public class frmMonHoc extends javax.swing.JPanel
             btnThem.setEnabled(true);
             txtMaMH.setEnabled(true);
         }
+
+//        if(maMH.length()==0)
+//        JOptionPane.showMessageDialog(null, "Vui lòng chọn môn học cần cập nhật", "Thông báo", 1);
+//        else
+//        {
+//            if (!checkinfo())
+//            return;
+//            int stchi = Integer.parseInt(soTinchi);
+//            int hky = Integer.parseInt(hocKy);
+//            MonHoc monHoc = new MonHoc(maMH, tenMH, stchi, htThi, hky, phongHoc);
+//            MonHoc update = new MonHocDAO().updateByID(monHoc);
+//            if (update != null)
+//            showAll();
+//            btnThem.setEnabled(true);
+//            txtMaMH.setEnabled(true);
+//        }
+
     }//GEN-LAST:event_btnCapnhatActionPerformed
 
     private void btnXoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXoaActionPerformed
         String maMH = txtMaMH.getText();
+
         if(maMH.length()==0)       
             JOptionPane.showMessageDialog(null, "Vui lòng chọn môn học cần xóa", "Thông báo", 1);
         else
@@ -547,6 +770,50 @@ public class frmMonHoc extends javax.swing.JPanel
                 catch (SQLException | ClassNotFoundException ex)
                 {
                     JOptionPane.showMessageDialog(this, "Dữ liệu chưa thể xóa, có tồn tại điểm hoặc giảng viên của môn học này.\nHãy xóa dữ liệu điểm hoặc giảng viên của môn học này trước.", "Thông báo", JOptionPane.ERROR_MESSAGE);
+
+//        if(maMH.length()==0)
+//        JOptionPane.showMessageDialog(null, "Vui lòng chọn môn học cần xóa", "Thông báo", 1);
+//        else
+//        {
+//            int b = JOptionPane.showConfirmDialog(null, "Bạn chắc chắn muốn xóa dữ liệu này?", "Thông báo", JOptionPane.YES_NO_OPTION);
+//            if (b == JOptionPane.YES_OPTION)
+//            {
+//                try
+//                {
+//                    new MonHocDAO().deleteMonHoc(maMH);
+//                }
+//                catch (SQLException | ClassNotFoundException ex)
+//                {
+//                    JOptionPane.showMessageDialog(this, "Dữ liệu chưa thể xóa, có tồn tại điểm hoặc giảng viên của môn học này.\nHãy xóa dữ liệu điểm hoặc giảng viên của môn học này trước.", "Thông báo", JOptionPane.ERROR_MESSAGE);
+//                }
+//                while (dtm.getRowCount() > 0)
+//                {
+//                    dtm.removeRow(0);
+//                }
+//                ResetForm();
+//                loaddata();
+//            }
+//        }
+    }//GEN-LAST:event_btnXoaActionPerformed
+
+    private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
+       // this.ResetForm();
+    }//GEN-LAST:event_btnResetActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
                 }
                 while (dtm.getRowCount() > 0)
                 {
@@ -585,6 +852,7 @@ public class frmMonHoc extends javax.swing.JPanel
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable tblMonHoc;
     private javax.swing.JTextField txtHocKy;
