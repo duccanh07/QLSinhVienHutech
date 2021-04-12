@@ -101,6 +101,7 @@ public class frmThongKe extends javax.swing.JPanel
             dtmSinhVien.addColumn("Địa chỉ");
             dtmSinhVien.addColumn("Số điện thoại");
             dtmSinhVien.addColumn("Mã lớp");
+            dtmSinhVien.addColumn("Ảnh");
             tblSinhVien_Lop.setModel(dtmSinhVien);
 
             // Danh sách giảng viên theo môn học
@@ -145,7 +146,7 @@ public class frmThongKe extends javax.swing.JPanel
             gioitinh = "Nam";
         else
             gioitinh = "Nữ";
-        Object[] objectData = {sv.getMasv(), sv.getHotensv(), sv.getHedaotao(), gioitinh, date, sv.getDiachi(), sv.getSdt(), sv.getMalop()};
+        Object[] objectData = {sv.getMasv(), sv.getHotensv(), sv.getHedaotao(), gioitinh, date, sv.getDiachi(), sv.getSdt(), sv.getMalop(), sv.getAnh()};
         return objectData;
     }
     
@@ -343,14 +344,14 @@ public class frmThongKe extends javax.swing.JPanel
 
             },
             new String [] {
-                "Mã sinh viên", "Họ tên", "Hệ đào tạo", "Giới tính", "Ngày sinh", "Địa chỉ", "Số điện thoại", "Mã lớp"
+                "Mã sinh viên", "Họ tên", "Hệ đào tạo", "Giới tính", "Ngày sinh", "Địa chỉ", "Số điện thoại", "Mã lớp", "Ảnh"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Boolean.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Boolean.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false
+                false, false, false, false, false, false, false, false, false
             };
 
             public Class getColumnClass(int columnIndex) {
