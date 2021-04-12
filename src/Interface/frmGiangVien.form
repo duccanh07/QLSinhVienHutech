@@ -40,6 +40,7 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <EmptySpace min="0" pref="1096" max="32767" attributes="0"/>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
@@ -52,10 +53,15 @@
           <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
           <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
 >>>>>>> remotes/origin/hirus
+=======
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+          <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+>>>>>>> remotes/origin/hirus
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
           <EmptySpace min="0" pref="531" max="32767" attributes="0"/>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
@@ -65,10 +71,15 @@
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
 =======
+=======
+>>>>>>> remotes/origin/hirus
           <Group type="102" alignment="1" attributes="0">
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel4" max="32767" attributes="0"/>
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
           </Group>
       </Group>
@@ -77,20 +88,30 @@
   <SubComponents>
     <Container class="javax.swing.JPanel" name="jPanel1">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> remotes/origin/hirus
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="66" red="33" type="rgb"/>
         </Property>
       </Properties>
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
 <<<<<<< HEAD
+<<<<<<< HEAD
               <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
               <Component id="jPanel4" alignment="0" min="-2" max="-2" attributes="0"/>
+=======
+              <Component id="jLabel10" alignment="0" max="32767" attributes="0"/>
+>>>>>>> remotes/origin/hirus
 =======
               <Component id="jLabel10" alignment="0" max="32767" attributes="0"/>
 >>>>>>> remotes/origin/hirus
@@ -99,15 +120,21 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
 <<<<<<< HEAD
+<<<<<<< HEAD
               <Group type="102" alignment="1" attributes="0">
                   <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jPanel4" max="32767" attributes="0"/>
 =======
+=======
+>>>>>>> remotes/origin/hirus
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
               </Group>
           </Group>
@@ -115,11 +142,14 @@
       </Layout>
       <SubComponents>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Container class="javax.swing.JPanel" name="jPanel2">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="66" red="33" type="rgb"/>
 =======
+=======
+>>>>>>> remotes/origin/hirus
         <Component class="javax.swing.JLabel" name="jLabel10">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -196,6 +226,9 @@
               <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
                 <EtchetBorder/>
               </Border>
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
             </Property>
           </Properties>
@@ -204,8 +237,11 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
 <<<<<<< HEAD
+<<<<<<< HEAD
                   <Component id="jLabel10" alignment="0" max="32767" attributes="0"/>
 =======
+=======
+>>>>>>> remotes/origin/hirus
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -263,6 +299,9 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
               </Group>
             </DimensionLayout>
@@ -271,8 +310,11 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
                       <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
 =======
+=======
+>>>>>>> remotes/origin/hirus
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="txtMaGV" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                           <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -306,6 +348,9 @@
                           <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -313,6 +358,7 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
+<<<<<<< HEAD
 <<<<<<< HEAD
             <Component class="javax.swing.JLabel" name="jLabel10">
               <Properties>
@@ -325,6 +371,8 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="TH&#xd4;NG TIN GI&#x1ea2;NG VI&#xca;N"/>
 =======
+=======
+>>>>>>> remotes/origin/hirus
             <Component class="javax.swing.JLabel" name="jLabel8">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -501,11 +549,15 @@
                   <Font name="Tahoma" size="12" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="(10 s&#x1ed1;)"/>
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
               </Properties>
             </Component>
           </SubComponents>
         </Container>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <Container class="javax.swing.JPanel" name="jPanel4">
           <Properties>
@@ -537,6 +589,8 @@
                           </Group>
                       </Group>
 =======
+=======
+>>>>>>> remotes/origin/hirus
         <Container class="javax.swing.JPanel" name="jPanel2">
 
           <Layout>
@@ -551,6 +605,9 @@
                           <Component id="btnReset" linkSize="3" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
                   </Group>
               </Group>
@@ -558,6 +615,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
@@ -575,6 +633,8 @@
                           </Group>
                       </Group>
 =======
+=======
+>>>>>>> remotes/origin/hirus
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnThem" min="-2" pref="40" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -583,6 +643,9 @@
                       <Component id="btnXoa" min="-2" pref="40" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnReset" pref="40" max="32767" attributes="0"/>
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -590,6 +653,7 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
+<<<<<<< HEAD
 <<<<<<< HEAD
             <Container class="javax.swing.JPanel" name="jPanel3">
               <Properties>
@@ -997,6 +1061,8 @@
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResetActionPerformed"/>
 =======
+=======
+>>>>>>> remotes/origin/hirus
             <Component class="javax.swing.JButton" name="btnCapnhat">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -1136,11 +1202,15 @@
                   </Properties>
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tblGiangVienMouseClicked"/>
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
                   </Events>
                 </Component>
               </SubComponents>
             </Container>
+<<<<<<< HEAD
 <<<<<<< HEAD
             <Container class="javax.swing.JPanel" name="jPanel6">
               <Properties>
@@ -1211,6 +1281,8 @@
           </SubComponents>
         </Container>
 =======
+=======
+>>>>>>> remotes/origin/hirus
           </SubComponents>
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel11">
@@ -1220,6 +1292,9 @@
             </Property>
           </Properties>
         </Component>
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
       </SubComponents>
     </Container>

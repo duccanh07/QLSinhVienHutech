@@ -138,7 +138,10 @@ public class frmMonHoc extends javax.swing.JPanel
 
         jPanel1 = new javax.swing.JPanel();
 <<<<<<< HEAD
+<<<<<<< HEAD
         jPanel2 = new javax.swing.JPanel();
+=======
+>>>>>>> remotes/origin/hirus
 =======
 >>>>>>> remotes/origin/hirus
         jPanel5 = new javax.swing.JPanel();
@@ -163,6 +166,7 @@ public class frmMonHoc extends javax.swing.JPanel
         btnXoa = new javax.swing.JButton();
         btnReset = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
+<<<<<<< HEAD
 <<<<<<< HEAD
         jPanel6 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -356,6 +360,102 @@ public class frmMonHoc extends javax.swing.JPanel
         txtHocKy.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
 >>>>>>> remotes/origin/hirus
+=======
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+
+        jPanel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        tblMonHoc.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        tblMonHoc.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Mã môn học", "Tên môn học", "Số tín chỉ", "Hình thức thi", "Học kỳ", "Phòng học"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        tblMonHoc.setRowHeight(25);
+        tblMonHoc.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tblMonHocMouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(tblMonHoc);
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2)
+                .addContainerGap())
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel3.setForeground(new java.awt.Color(255, 255, 255));
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(51, 102, 255));
+        jLabel3.setText("Tên môn học");
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(51, 102, 255));
+        jLabel2.setText("Mã môn học");
+
+        txtMaMH.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        txtPhongHoc.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        txtSoTinChi.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        txtTenMH.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        txtTenMH.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTenMHActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(51, 102, 255));
+        jLabel4.setText("Số tín chỉ");
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(51, 102, 255));
+        jLabel5.setText("Học kỳ");
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(51, 102, 255));
+        jLabel6.setText("Phòng học");
+
+        txtHocKy.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+>>>>>>> remotes/origin/hirus
         cboHinhThucThi.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -414,6 +514,11 @@ public class frmMonHoc extends javax.swing.JPanel
         );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        jPanel3Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {cboHinhThucThi, txtHocKy, txtMaMH, txtPhongHoc, txtSoTinChi, txtTenMH});
+
+>>>>>>> remotes/origin/hirus
 =======
         jPanel3Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {cboHinhThucThi, txtHocKy, txtMaMH, txtPhongHoc, txtSoTinChi, txtTenMH});
 
@@ -490,6 +595,7 @@ public class frmMonHoc extends javax.swing.JPanel
         );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -502,6 +608,8 @@ public class frmMonHoc extends javax.swing.JPanel
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 =======
+=======
+>>>>>>> remotes/origin/hirus
         jPanel4Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnCapnhat, btnReset, btnThem, btnXoa});
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Hoa.png"))); // NOI18N
@@ -517,11 +625,15 @@ public class frmMonHoc extends javax.swing.JPanel
                     .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
                     .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
+<<<<<<< HEAD
 <<<<<<< HEAD
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -536,6 +648,8 @@ public class frmMonHoc extends javax.swing.JPanel
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
 =======
+=======
+>>>>>>> remotes/origin/hirus
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -548,6 +662,9 @@ public class frmMonHoc extends javax.swing.JPanel
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
                         .addGap(11, 11, 11)
                         .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
@@ -555,7 +672,11 @@ public class frmMonHoc extends javax.swing.JPanel
         );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         jPanel6.setBackground(new java.awt.Color(51, 102, 255));
+=======
+        jPanel2.setBackground(new java.awt.Color(51, 102, 255));
+>>>>>>> remotes/origin/hirus
 =======
         jPanel2.setBackground(new java.awt.Color(51, 102, 255));
 >>>>>>> remotes/origin/hirus
@@ -565,6 +686,7 @@ public class frmMonHoc extends javax.swing.JPanel
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("THÔNG TIN MÔN HỌC");
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -576,6 +698,8 @@ public class frmMonHoc extends javax.swing.JPanel
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
 =======
+=======
+>>>>>>> remotes/origin/hirus
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -585,12 +709,16 @@ public class frmMonHoc extends javax.swing.JPanel
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addContainerGap())
         );
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -636,10 +764,24 @@ public class frmMonHoc extends javax.swing.JPanel
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+=======
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+>>>>>>> remotes/origin/hirus
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -658,11 +800,15 @@ public class frmMonHoc extends javax.swing.JPanel
         txtMaMH.setEnabled(false);
     }//GEN-LAST:event_tblMonHocMouseClicked
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     private void txtTenMHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTenMHActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTenMHActionPerformed
 
+=======
+       
+>>>>>>> remotes/origin/hirus
 =======
        
 >>>>>>> remotes/origin/hirus
@@ -673,6 +819,7 @@ public class frmMonHoc extends javax.swing.JPanel
         String htThi = (String) cboHinhThucThi.getSelectedItem();
         String hocKy = txtHocKy.getText();
         String phongHoc = txtPhongHoc.getText();
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 //        Check c = new Check();
@@ -702,6 +849,8 @@ public class frmMonHoc extends javax.swing.JPanel
 //            showAll();
 //        }
 =======
+=======
+>>>>>>> remotes/origin/hirus
         
         Check c = new Check();
         if (!c.checkID(txtMaMH.getText()))
@@ -729,6 +878,9 @@ public class frmMonHoc extends javax.swing.JPanel
             if (insert != null)
                 showAll();
         }
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
     }//GEN-LAST:event_btnThemActionPerformed
 
@@ -739,6 +891,7 @@ public class frmMonHoc extends javax.swing.JPanel
         String htThi = (String) cboHinhThucThi.getSelectedItem();
         String hocKy = txtHocKy.getText();
         String phongHoc = txtPhongHoc.getText();
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 //        if(maMH.length()==0)
@@ -757,6 +910,8 @@ public class frmMonHoc extends javax.swing.JPanel
 //            txtMaMH.setEnabled(true);
 //        }
 =======
+=======
+>>>>>>> remotes/origin/hirus
         
         if(maMH.length()==0)       
             JOptionPane.showMessageDialog(null, "Vui lòng chọn môn học cần cập nhật", "Thông báo", 1);
@@ -773,11 +928,15 @@ public class frmMonHoc extends javax.swing.JPanel
             btnThem.setEnabled(true);
             txtMaMH.setEnabled(true);
         }
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
     }//GEN-LAST:event_btnCapnhatActionPerformed
 
     private void btnXoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXoaActionPerformed
         String maMH = txtMaMH.getText();
+<<<<<<< HEAD
 <<<<<<< HEAD
 //        if(maMH.length()==0)
 //        JOptionPane.showMessageDialog(null, "Vui lòng chọn môn học cần xóa", "Thông báo", 1);
@@ -823,6 +982,8 @@ public class frmMonHoc extends javax.swing.JPanel
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
 =======
+=======
+>>>>>>> remotes/origin/hirus
         if(maMH.length()==0)       
             JOptionPane.showMessageDialog(null, "Vui lòng chọn môn học cần xóa", "Thông báo", 1);
         else
@@ -837,12 +998,20 @@ public class frmMonHoc extends javax.swing.JPanel
                 catch (SQLException | ClassNotFoundException ex)
                 {
                     JOptionPane.showMessageDialog(this, "Dữ liệu chưa thể xóa, có tồn tại điểm hoặc giảng viên của môn học này.\nHãy xóa dữ liệu điểm hoặc giảng viên của môn học này trước.", "Thông báo", JOptionPane.ERROR_MESSAGE);
+<<<<<<< HEAD
 >>>>>>> remotes/origin/hirus
                 }
                 while (dtm.getRowCount() > 0)
                 {
                     dtm.removeRow(0);
                 }
+=======
+                }
+                while (dtm.getRowCount() > 0)
+                {
+                    dtm.removeRow(0);
+                }
+>>>>>>> remotes/origin/hirus
                 ResetForm();
                 loaddata();
             }
@@ -877,7 +1046,10 @@ public class frmMonHoc extends javax.swing.JPanel
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
 <<<<<<< HEAD
+<<<<<<< HEAD
     private javax.swing.JPanel jPanel6;
+=======
+>>>>>>> remotes/origin/hirus
 =======
 >>>>>>> remotes/origin/hirus
     private javax.swing.JScrollPane jScrollPane2;

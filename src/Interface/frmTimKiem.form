@@ -28,6 +28,7 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <EmptySpace min="0" pref="986" max="32767" attributes="0"/>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
@@ -36,16 +37,22 @@
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
 =======
+=======
+>>>>>>> remotes/origin/hirus
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jTabbedPane1" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
           <EmptySpace min="0" pref="728" max="32767" attributes="0"/>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
@@ -58,10 +65,14 @@
 =======
           <Component id="jTabbedPane1" alignment="0" max="32767" attributes="0"/>
 >>>>>>> remotes/origin/hirus
+=======
+          <Component id="jTabbedPane1" alignment="0" max="32767" attributes="0"/>
+>>>>>>> remotes/origin/hirus
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <Container class="javax.swing.JPanel" name="jPanel1">
 
@@ -103,6 +114,8 @@
                 </Constraint>
               </Constraints>
 =======
+=======
+>>>>>>> remotes/origin/hirus
     <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -172,6 +185,9 @@
                   </Border>
                 </Property>
               </Properties>
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
 
               <Layout>
@@ -179,6 +195,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
                           <Component id="jPanel3" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
@@ -197,10 +214,16 @@
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
 >>>>>>> remotes/origin/hirus
+=======
+                          <Component id="jScrollPane2" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+>>>>>>> remotes/origin/hirus
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
@@ -216,12 +239,18 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jScrollPane2" pref="492" max="32767" attributes="0"/>
 >>>>>>> remotes/origin/hirus
+=======
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jScrollPane2" pref="492" max="32767" attributes="0"/>
+>>>>>>> remotes/origin/hirus
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <Container class="javax.swing.JPanel" name="jPanel3">
                   <Properties>
@@ -340,6 +369,8 @@
                 </Constraint>
               </Constraints>
 =======
+=======
+>>>>>>> remotes/origin/hirus
                 <Container class="javax.swing.JScrollPane" name="jScrollPane2">
                   <AuxValues>
                     <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -524,11 +555,15 @@
                   </Border>
                 </Property>
               </Properties>
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
 
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
@@ -545,17 +580,23 @@
                           <EmptySpace min="0" pref="282" max="32767" attributes="0"/>
                       </Group>
 =======
+=======
+>>>>>>> remotes/origin/hirus
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jScrollPane3" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
                           <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -569,12 +610,17 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jScrollPane3" pref="488" max="32767" attributes="0"/>
 >>>>>>> remotes/origin/hirus
+=======
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jScrollPane3" pref="488" max="32767" attributes="0"/>
+>>>>>>> remotes/origin/hirus
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <Container class="javax.swing.JPanel" name="jPanel5">
                   <Properties>
@@ -679,6 +725,8 @@
               </SubComponents>
             </Container>
 =======
+=======
+>>>>>>> remotes/origin/hirus
                 <Container class="javax.swing.JScrollPane" name="jScrollPane3">
                   <AuxValues>
                     <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -981,6 +1029,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="lblAnhSv">
             </Component>
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
           </SubComponents>
         </Container>

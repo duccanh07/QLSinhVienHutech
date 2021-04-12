@@ -132,10 +132,15 @@ public class frmLop extends javax.swing.JPanel
     private void initComponents() {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         jPanel1 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
+=======
+        jPanel3 = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
+>>>>>>> remotes/origin/hirus
 =======
         jPanel3 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
@@ -161,6 +166,7 @@ public class frmLop extends javax.swing.JPanel
         jPanel6 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -419,6 +425,133 @@ public class frmLop extends javax.swing.JPanel
         });
 
 >>>>>>> remotes/origin/hirus
+=======
+        setBackground(new java.awt.Color(204, 204, 255));
+        setPreferredSize(new java.awt.Dimension(937, 501));
+
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder("")));
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        txtKhoaHoc.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        txtTenLop.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(51, 102, 255));
+        jLabel5.setText("Khóa học");
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(51, 102, 255));
+        jLabel4.setText("Mã khoa");
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(51, 102, 255));
+        jLabel2.setText("Mã lớp");
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(51, 102, 255));
+        jLabel3.setText("Tên lớp");
+
+        cboMaKhoa.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        cboMaKhoa.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cboMaKhoa.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cboMaKhoaItemStateChanged(evt);
+            }
+        });
+
+        txtMaLop.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        txtTenKhoa.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        txtTenKhoa.setEnabled(false);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtKhoaHoc, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel2))
+                        .addGap(22, 22, 22)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(txtMaLop, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(cboMaKhoa, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtTenLop, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtTenKhoa, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(cboMaKhoa, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel2)
+                        .addComponent(jLabel4)
+                        .addComponent(txtMaLop, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtTenKhoa, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(txtTenLop, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(txtKhoaHoc, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        btnCapnhat.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnCapnhat.setForeground(new java.awt.Color(51, 102, 255));
+        btnCapnhat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/update_1.png"))); // NOI18N
+        btnCapnhat.setText(" Cập nhật");
+        btnCapnhat.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnCapnhat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCapnhatActionPerformed(evt);
+            }
+        });
+
+        btnXoa.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnXoa.setForeground(new java.awt.Color(51, 102, 255));
+        btnXoa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/xoa.png"))); // NOI18N
+        btnXoa.setText(" Xóa");
+        btnXoa.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnXoa.setIconTextGap(2);
+        btnXoa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnXoaActionPerformed(evt);
+            }
+        });
+
+        btnThem.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnThem.setForeground(new java.awt.Color(51, 102, 255));
+        btnThem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/add.png"))); // NOI18N
+        btnThem.setText(" Thêm");
+        btnThem.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnThem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnThemActionPerformed(evt);
+            }
+        });
+
+>>>>>>> remotes/origin/hirus
         btnReset.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnReset.setForeground(new java.awt.Color(51, 102, 255));
         btnReset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/reset_1.png"))); // NOI18N
@@ -509,6 +642,11 @@ public class frmLop extends javax.swing.JPanel
         );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Hoa.png"))); // NOI18N
+
+>>>>>>> remotes/origin/hirus
 =======
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Hoa.png"))); // NOI18N
 
@@ -521,7 +659,11 @@ public class frmLop extends javax.swing.JPanel
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 <<<<<<< HEAD
+<<<<<<< HEAD
                     .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+=======
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+>>>>>>> remotes/origin/hirus
 =======
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 >>>>>>> remotes/origin/hirus
@@ -540,7 +682,11 @@ public class frmLop extends javax.swing.JPanel
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addContainerGap()
 <<<<<<< HEAD
+<<<<<<< HEAD
                         .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+=======
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+>>>>>>> remotes/origin/hirus
 =======
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
 >>>>>>> remotes/origin/hirus
@@ -574,6 +720,7 @@ public class frmLop extends javax.swing.JPanel
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -640,10 +787,24 @@ public class frmLop extends javax.swing.JPanel
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+=======
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+>>>>>>> remotes/origin/hirus
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+<<<<<<< HEAD
+>>>>>>> remotes/origin/hirus
+=======
 >>>>>>> remotes/origin/hirus
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -659,6 +820,7 @@ public class frmLop extends javax.swing.JPanel
         btnXoa.setEnabled(true);
         txtMaLop.setEnabled(false);
     }//GEN-LAST:event_tblLopMouseClicked
+<<<<<<< HEAD
 
 <<<<<<< HEAD
     private void cboMaKhoaItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cboMaKhoaItemStateChanged
@@ -845,6 +1007,73 @@ public class frmLop extends javax.swing.JPanel
                     break;
 =======
 >>>>>>> remotes/origin/hirus
+=======
+
+    private void btnThemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThemActionPerformed
+        String malop = txtMaLop.getText();
+        String tenlop = txtTenLop.getText();
+        String khoahoc = txtKhoaHoc.getText();
+        String makhoa = allKhoa.get(cboMaKhoa.getSelectedIndex()).getMakhoa();
+        Lop lop = new Lop(malop, tenlop, khoahoc, makhoa);        
+        ArrayList<Lop> listCheck = new LopDAO().checkID(malop);
+                
+        Check c = new Check();
+        if (!c.checkID(txtMaLop.getText()))
+        {
+            JOptionPane.showMessageDialog(this, "Lỗi nhập mã lớp", "Hãy nhập lại", JOptionPane.ERROR_MESSAGE);
+            txtMaLop.selectAll();
+            txtMaLop.requestFocus();
+        }
+        else if (!checkinfo())
+            return;
+        else if (listCheck.size() > 0)
+        {
+            JOptionPane.showMessageDialog(this, "Mã lớp bị trùng!", "Vui lòng kiểm tra lại", JOptionPane.ERROR_MESSAGE);
+            txtMaLop.selectAll();
+            txtMaLop.requestFocus();
+        }
+        else
+        {
+            Lop insert = new LopDAO().addNew(lop);
+            if (insert != null)
+                showAll();
+        }
+    }//GEN-LAST:event_btnThemActionPerformed
+
+    private void btnCapnhatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCapnhatActionPerformed
+        String malop = txtMaLop.getText();
+        String tenlop = txtTenLop.getText();                
+        String khoahoc = txtKhoaHoc.getText();
+        String makhoa = allKhoa.get(cboMaKhoa.getSelectedIndex()).getMakhoa();
+        Lop lop = new Lop(malop, tenlop, khoahoc, makhoa);
+        Lop update = new LopDAO().updateByID(lop);
+                
+        if(malop.length()==0)       
+            JOptionPane.showMessageDialog(null, "Vui lòng chọn lớp cần cập nhật", "Thông báo", 1);
+        else
+        {
+            if (!checkinfo())
+                return;  
+            else if (update != null)
+                showAll();
+            btnThem.setEnabled(true);
+            txtMaLop.setEnabled(true);           
+        }
+    }//GEN-LAST:event_btnCapnhatActionPerformed
+
+    private void btnXoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXoaActionPerformed
+        String malop = txtMaLop.getText();
+        if(malop.length()==0)
+            JOptionPane.showMessageDialog(null, "Vui lòng chọn lớp cần xóa", "Thông báo", 1);
+        else
+        {
+            int b = JOptionPane.showConfirmDialog(null, "Bạn chắc chắn muốn xóa dữ liệu này?", "Thông báo", JOptionPane.YES_NO_OPTION);
+            if (b == JOptionPane.YES_OPTION)
+            {
+                try
+                {
+                    new LopDAO().deleteLop(malop);
+>>>>>>> remotes/origin/hirus
                 }
                 catch (SQLException | ClassNotFoundException ex)
                 {
@@ -861,6 +1090,7 @@ public class frmLop extends javax.swing.JPanel
     }//GEN-LAST:event_btnXoaActionPerformed
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         /* Create and display the forfffffmm */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -868,6 +1098,11 @@ public class frmLop extends javax.swing.JPanel
             }
         });
     }
+=======
+    private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
+        this.ResetForm();
+    }//GEN-LAST:event_btnResetActionPerformed
+>>>>>>> remotes/origin/hirus
 =======
     private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
         this.ResetForm();
@@ -910,8 +1145,11 @@ public class frmLop extends javax.swing.JPanel
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel6;
 <<<<<<< HEAD
+<<<<<<< HEAD
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+=======
+>>>>>>> remotes/origin/hirus
 =======
 >>>>>>> remotes/origin/hirus
     private javax.swing.JScrollPane jScrollPane1;
